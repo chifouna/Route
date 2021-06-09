@@ -1,38 +1,158 @@
-.App {
-  text-align: center;
+.ListMovie {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+  position: absolute;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ImageMovie {
+  width: 210px;
+  height: 300px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Title-rating {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 18px;
+}
+.Movie {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(214, 214, 219);
+  box-shadow: 10px 5px 10px 5px #e2dede;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-left: 15px;
+  margin-bottom: 25px;
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Movie:hover {
+  box-shadow: 0 5px 10px 0 #1b2734;
+  background-color: rgb(248, 248, 248);
+}
+
+.MovieOver {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  background-color: white;
+  padding: 1rem;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+.Title-rating h6 {
+  color: #111;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.MovieOver h2 {
+  font-size: 14px;
+  margin-top: 5px;
+}
+.MovieOver p {
+  font-size: 13px;
+}
+
+.Movie:hover .MovieOver {
+  transform: translateX(0%);
+}
+
+body {
+  background-color: black;
+  font-weight: 500;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.search {
+  width: 350px;
+  border-radius: 15px;
+}
+
+.nav-search {
+  margin-top: 24px;
+}
+
+.filter {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.filterrate {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h4{
+  color: grey;
+}
+.span1{
+  color: red;
 }
 
-.App-link {
-  color: #61dafb;
+.add {
+  display: flex;
+  border-radius: 15px;
+  margin-top: 20px;
+  width: 160px;
+  background-color: grey;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Header {
+  display: flex;
+  justify-content: space-around;
+  background: gray;
+  box-shadow: 0px 5px 10px 0px #e2dede;
+  width: 100%;
+  top: 0%;
+}
+
+.imageHeader {
+  display: flex;
+  justify-content: space-around;
+}
+
+.imageHeader p {
+  margin-top: 20px;
+  margin-left: 19px;
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+.refresh {
+  display: flex;
+  justify-content: space-between;
+}
+
+.refresh-button {
+  margin-left: 10px;
+  border-radius: 15px;
+  margin-top: 20px;
+  width: 160px;
+}
+
+.trailer {
+  display: flex;
+  justify-content: center;
+}
+
+span {
+  margin-right: 10px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.movietype {
+  margin-left: 8px;
+  font-size: 16px;
+  margin-bottom: 15px;
 }
